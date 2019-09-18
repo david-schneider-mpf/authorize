@@ -15,5 +15,7 @@ mainClass in Compile := Some("Main")
 
 dockerBaseImage := "openjdk:jre-alpine"
 
+dockerUpdateLatest := true
+
 dockerExposedPorts in Docker := Seq(8080)
 dockerUsername in Docker := Option("davidschneidermpf")
